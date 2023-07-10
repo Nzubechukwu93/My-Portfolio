@@ -20,6 +20,10 @@
   --color-gray-6:#12181b;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000000;
   color: #ffffff;
