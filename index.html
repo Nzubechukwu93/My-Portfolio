@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Poppins:wght@400;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <label class="logo">Nzube-<span>Dev</span></label>
+        <ul>
+            <li><a class="active" href="">Home</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="project.html">Project</a></li>
+        </ul>
+
+
+    </nav>
+
+
+
+    <div class="home">
+        <div class="text1">Hello, my Name Is</div>
+        <div class="text2">Nzubechukwu Oriji</div>
+        <div class="text3">I'm a <span>Frontend Developer</span></div>
+        <p>I develop websites and applications using HTML,CSS and JAVASCRIPT</p>
+    </div>
+
+    <div class="skills">
+        <h1 class="title">My <span>Skills</span></h1>
+        <div class="skill-bars">
+            <div class="bar">
+                <div class="info">
+                    <span>HTML</span>
+                    <span>90%</span>
+                </div>
+                <div class="line html"></div>
+            </div>
+
+            <div class="bar">
+                <div class="info">
+                    <span>CSS</span>
+                    <span>80%</span>
+                </div>
+                <div class="line css"></div>
+            </div>
+
+            <div class="bar">
+                <div class="info">
+                    <span>JAVASCRIPT</span>
+                    <span>65%</span>
+                </div>
+                <div class="line javascript"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h1 class="title">Contact <span>Me</span></h1>
+
+        <form  action="https://formspree.io/f/mvojopby" method="POST">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Message" cols="30" rows="10" required></textarea>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/nzubechukwu-oriji-46b257162"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/Nzubechukwuori?t=VzVu0s0VgK1CaQU5m8HheQ&s=08"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/invites/contact/?i=1zz1gc173txm&utm_content=1w1u63l"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>Copyright &copy; 2023 Nzube Dev</p>
+    </footer>
+    
+</body>
+</html>
