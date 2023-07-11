@@ -39,15 +39,32 @@ nav {
 }
 
 .logo {
-  color: white;
   font-size: 40px;
   line-height: 80px;
   padding: 0 100px;
-  font-weight: 500;
+  font-weight: bold;
+  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: textclip 2s linear infinite;
+          animation: textclip 2s linear infinite;
 }
 
-.logo span {
-  color: crimson;
+@-webkit-keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 nav ul {
@@ -97,9 +114,29 @@ a.active, a:hover {
 }
 
 .home .text2 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
   margin-left: -3px;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+  background-image: linear-gradient(#fff, #fff);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -600px 0;
+  -webkit-animation: namecolor 5s linear infinite alternate;
+          animation: namecolor 5s linear infinite alternate;
+}
+
+@-webkit-keyframes namecolor {
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes namecolor {
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .home .text3 {
@@ -112,8 +149,28 @@ a.active, a:hover {
   font-weight: 500;
 }
 
-.home .home p {
+.home p {
   font-size: 20px;
+}
+
+.home a {
+  background-color: crimson;
+  color: var(--color-white);
+  padding: 10px 20px;
+  display: block;
+  margin: 20px 0;
+  text-align: center;
+  width: 50%;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.home a:hover {
+  background: none;
+  border: 1px solid crimson;
 }
 
 .skills {
@@ -224,8 +281,8 @@ input[type=email] {
 .btn {
   background: crimson;
   color: #ffffff;
-  width: 200px;
-  font-size: 23px;
+  width: 50%;
+  font-size: 18px;
   padding: 10px 20px;
   border-radius: 10px;
   border: 2px solid crimson;
@@ -293,6 +350,7 @@ footer p {
   background-color: crimson;
   color: #fff;
   padding: 10px 20px;
+  text-align: center;
   border: none;
   border-radius: 10px;
   margin: 5px auto;
@@ -426,23 +484,26 @@ footer p {
 }
 
 @media (max-width: 450px) {
-  .logo {
+  nav .logo {
     font-size: 20px;
+  }
+  nav .checkbtn {
+    font-size: 20px;
+  }
+  .home .text1 {
+    font-size: 20px;
+  }
+  .home .text2 {
+    font-size: 25px;
+  }
+  .home .text3 {
+    font-size: 18px;
+  }
+  .home p {
+    font-size: 18px;
   }
   .title {
     font-size: 20px;
-  }
-  .text1 {
-    font-size: 20px;
-  }
-  .text2 {
-    font-size: 25px;
-  }
-  .text3 {
-    font-size: 18px;
-  }
-  .checkbtn {
-    font-size: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
